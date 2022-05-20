@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: black;
+}
+
+.grid {
+  background-color: rgb(190, 29, 155);
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.score {
+  background-color: rgb(168, 252, 99);
+  margin: 10px;
+  border-radius: 7%;
+}
+.start {
+  background-color: rgb(168, 252, 99);
+  margin: 10px;
+  border-radius: 7%;
+}
+
+.snake {
+  background-color: rgb(4, 4, 26);
+}
+
+.apple {
+  background-color: red;
+  border-radius: 50%;
+}
