@@ -41,8 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       (currentSnake[0] + width >= width * width && direction === width) ||
       (currentSnake[0] % width === width - 1 && direction === 1) ||
       (currentSnake[0] % width === 0 && direction === -1) ||
-      (currentSnake[0] - width < 0 && direction === -width) ||
-      squares[currentSnake[0] + direction].classList.contains("snake")
+      (currentSnake[0] - width < 0 && direction === -width)
     ) {
       confirm("You lost. Press button to restart.");
       return clearInterval(interval);
@@ -83,13 +82,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function control(e) {
     squares[currentIndex].classList.remove("snake");
 
-    if (e.keyCode === 39) {
+    if (e.keyCode === 39 && direction !== -1) {
       direction = 1;
-    } else if (e.keyCode === 38) {
+    } else if (e.keyCode === 38 && direction !== width) {
       direction = -width;
-    } else if (e.keyCode === 37) {
+    } else if (e.keyCode === 37 && direction !== 1) {
       direction = -1;
-    } else if (e.keyCode === 40) {
+    } else if (e.keyCode === 40 && direction !== -width) {
       direction = +width;
     }
   }
