@@ -18,12 +18,12 @@ body {
 }
 
 .score {
-  background-color: white;
+  background-color: rgb(168, 252, 99);
   margin: 10px;
   border-radius: 7%;
 }
 .start {
-  background-color: white;
+  background-color: rgb(168, 252, 99);
   margin: 10px;
   border-radius: 7%;
 }

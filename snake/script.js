@@ -1,33 +1,8 @@
-// for (let i = 0; i < 441; i++) {
-//     let insideDiv = document.createElement("div");
-//     grid.appendChild(insideDiv);
-//   }
-
-// for (let i = 0; i < 441; i++) {
-//   const gridPart = document.createElement("div");
-//   document.getElementById("grid").appendChild(gridPart);
-// }
-
-// var grid = document.getElementById("grid");
-// div.className = "div";
-// var div = document.getElementById("div");
-
-// for (var i = 0; i < 441; i++) {
-//  grid.appendChild(div.cloneNode(true));
-// }
-
-// createDiv() {
-//     let div = document.createElement('div');
-//     div.classList.add('grid');
-//     grid.appendChild(div);
-
-// }
-
-// var grid = document.getElementById("grid");
-// var insideDiv = document.createElement("div");
-// for (var i = 0; i < 441; i++) {
-//   grid.appendChild(insideDiv);
-// }
+for (let i = 0; i < 441; i++) {
+  const para = document.createElement("div");
+  para.innerHTML = "";
+  document.getElementById("grid").appendChild(para);
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const squares = document.querySelectorAll(".grid div");
